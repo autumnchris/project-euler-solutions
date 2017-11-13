@@ -2,4 +2,4 @@
 
 My solutions to the programming problems on [Project Euler](https://projecteuler.net).
 
-Languages used: JavaScript, Ruby
+__LANGUAGES USED:__ JavaScript, Ruby
