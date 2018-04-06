@@ -10,15 +10,15 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 */
 
 function problem002(num) {
+  var i,
+  arr = [1, 2],
+  previousNum = arr[0],
+  currentNum = arr[1],
+  newCurrentNum,
+  sum = 0;
 
-  var arr = [1, 2];
-  var previousNum = arr[0];
-  var currentNum = arr[1];
-  var sum = 0;
-
-  for (var i = 0; i < arr.length; i++) {
-
-    var newCurrentNum = previousNum + currentNum;
+  for (i = 0; i < arr.length; i++) {
+    newCurrentNum = previousNum + currentNum;
 
     if (newCurrentNum <= num) {
       arr.push(newCurrentNum);
@@ -30,7 +30,6 @@ function problem002(num) {
       sum += arr[i];
     }
   }
-
   return sum;
 }
 
