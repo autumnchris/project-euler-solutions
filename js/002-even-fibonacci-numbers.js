@@ -10,12 +10,12 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 */
 
 function problem002(num) {
-  var i,
-  arr = [1, 2],
-  previousNum = arr[0],
-  currentNum = arr[1],
-  newCurrentNum,
-  sum = 0;
+  const arr = [1, 2];
+  let previousNum = arr[0];
+  let currentNum = arr[1];
+  let sum = 0;
+  let newCurrentNum;
+  let i;
 
   for (i = 0; i < arr.length; i++) {
     newCurrentNum = previousNum + currentNum;
